@@ -41,7 +41,7 @@ namespace Singleton
                 {
                     empty = false;
                     boiled = false;
-                    Console.WriteLine("Заполнение нагревателя шоколадной смесью");
+                    Console.WriteLine("1. Заполнение нагревателя шоколадной смесью");
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace Singleton
                 if (!isEmpty() && !isBoiled()) // Нагреватель не пуст, шоколад не вскипячён
                 {
                     boiled = true;
-                    Console.WriteLine("Кипячение шоколадной смеси");
+                    Console.WriteLine("2. Кипячение шоколадной смеси");
                 }
             }
         }
@@ -66,7 +66,7 @@ namespace Singleton
             {
                 if (!isEmpty() && isBoiled()) // Нагреватель не пуст, шоколад вскипячён
                 {
-                    Console.WriteLine("Слив содержимого нагревателя\n");
+                    Console.WriteLine("3. Слив содержимого нагревателя\n");
                     empty = true;
                     boiled = false;
                 }
