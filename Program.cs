@@ -17,9 +17,10 @@ namespace Singleton
         public static void Main()
         {
             Call();
+            Call();
             
-            new Thread(new ThreadStart(Call)).Start();
-            new Thread(new ThreadStart(Call)).Start();
+            //new Thread(new ThreadStart(Call)).Start();
+            //new Thread(new ThreadStart(Call)).Start();
 
             Console.ReadKey();
         }
